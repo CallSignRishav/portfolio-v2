@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MainHeader = () => {
 	return (
-		<header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24 bg-blue-600">
+		<header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24 ">
 			<div className="flex flex-col gap-10">
 				<div className="flex flex-col gap-5">
 					<p className="text-4xl">RISHAV MONDAL</p>

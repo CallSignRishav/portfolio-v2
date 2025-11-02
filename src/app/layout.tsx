@@ -1,3 +1,4 @@
+import { inter } from "@/lib/fonts";
 import { ReactNode } from "react";
 import "./globals.css";
 
@@ -7,7 +8,9 @@ const RootLayout = ({
 	children: ReactNode;
 }>) => {
 	return (
-		<html lang="en">
+		<html
+			lang="en"
+			className={`${inter.variable}`}>
 			<body>{children}</body>
 		</html>
 	);
