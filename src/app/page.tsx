@@ -5,10 +5,12 @@ const page = () => {
 	return (
 		<>
 			<div className="px-5">
-				<div className="max-w-7xl mx-auto lg:flex lg:justify-between lg:gap-4 py-16 lg:py-0 font-inter">
+				<div className="mx-auto max-w-7xl py-16 lg:flex lg:justify-between lg:gap-4 lg:py-0">
 					<MainHeader />
 
-					<AboutSection />
+					<main className="lg:w-[52%]">
+						<AboutSection />
+					</main>
 				</div>
 			</div>
 		</>
