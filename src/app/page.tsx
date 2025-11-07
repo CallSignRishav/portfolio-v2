@@ -1,4 +1,4 @@
-import AboutSection from "@/components/AboutSection";
+import AllSections from "@/components/AllSections";
 import MainHeader from "@/components/Header/MainHeader";
 
 const page = () => {
@@ -9,7 +9,9 @@ const page = () => {
 					<MainHeader />
 
 					<main className="lg:w-[52%]">
-						<AboutSection />
+						{/* <AboutSection /> */}
+
+						<AllSections />
 					</main>
 				</div>
 			</div>
