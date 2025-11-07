@@ -1,14 +1,23 @@
 "use client";
 
 import { activeIdAtom } from "@/lib/atoms";
+import { experiences } from "@/lib/informations";
 import { useSetAtom } from "jotai";
 import { useEffect } from "react";
+import ExperienceCard from "./ExperienceCard";
+import { Card, CardContent } from "./ui/card";
 
 const AllSections = () => {
 	const setActiveId = useSetAtom(activeIdAtom);
 
 	useEffect(() => {
-		const sectionIds = ["about", "projects", "skills", "contact"];
+		const sectionIds = [
+			"about",
+			"experience",
+			"projects",
+			"skills",
+			"contact",
+		];
 
 		const observer = new IntersectionObserver(
 			(entries) => {
@@ -136,6 +145,37 @@ const AllSections = () => {
 			</section>
 
 			<section
+				className="min-h-[80dvh] space-y-10 text-justify"
+				id="experience">
+				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+					<h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">
+						EXPERIENCES
+					</h2>
+				</div>
+
+				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
+					<h2 className="text-sm font-bold tracking-widest text-white uppercase">
+						Experiences
+					</h2>
+				</div>
+
+				<div className="space-y-8">
+					{experiences.map((details, index) => {
+						return (
+							<ExperienceCard
+								key={index}
+								company={details.company}
+								position={details.position}
+								startDate={details.startDate}
+								description={details.description}
+								technologies={details.technologies}
+							/>
+						);
+					})}
+				</div>
+			</section>
+
+			<section
 				className="min-h-[80dvh] space-y-5 text-justify"
 				id="projects">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -150,15 +190,28 @@ const AllSections = () => {
 					</h2>
 				</div>
 
-				<p className="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam, aut enim velit at aliquid atque veniam optio, animi
-					soluta numquam ex ad nobis, natus dolores voluptatum
-					quibusdam fugit est? A, fuga consectetur tempore dignissimos
-					asperiores voluptates natus quibusdam odit dicta. Fugiat
-					natus nisi aspernatur repellendus expedita tenetur porro
-					eius, cupiditate ratione laudantium autem. Cum, accusantium!
-				</p>
+				<Card>
+					<CardContent>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing
+							elit. Sed facilis, quis recusandae fugiat quasi
+							debitis asperiores qui eum deserunt, ratione eveniet
+							et rem ipsum molestiae, inventore ullam soluta a
+							eligendi pariatur amet reiciendis consequuntur porro
+							doloribus! Ipsum alias at maiores in minus iure?
+							Illo unde obcaecati autem vero ducimus. Nobis
+							necessitatibus rerum repellat iusto dolor officia
+							nemo molestiae dicta commodi? Eos deleniti
+							necessitatibus ratione unde cumque corporis possimus
+							beatae quaerat incidunt numquam, autem expedita nisi
+							minus nam reprehenderit ab ad! Repellendus quas
+							voluptatibus, qui enim temporibus fugiat harum
+							deleniti consequatur molestias cumque nam tempore
+							reiciendis similique, doloribus aliquid explicabo
+							quasi?
+						</p>
+					</CardContent>
+				</Card>
 			</section>
 
 			<section
