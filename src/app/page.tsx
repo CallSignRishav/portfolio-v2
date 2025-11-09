@@ -1,7 +1,21 @@
 import AllSections from "@/components/AllSections";
 import MainHeader from "@/components/Header/MainHeader";
+import { env } from "@/lib/env";
+import { Metadata } from "next";
 
-const page = () => {
+export const metadata: Metadata = {
+	metadataBase: new URL(`https://${env.DOMAIN_NAME}`),
+	title: "Rishav Mondal | Portfolio",
+	description:
+		"A full-stack web developer who found his way into coding through a slightly unconventional path.",
+	keywords:
+		"portfolio, rishav mondal, rishav mondal portfolio, developer portfolio website, portfolio website",
+	openGraph: {
+		images: [`/avira-main-logo-dark.png`],
+	},
+};
+
+const page = async () => {
 	return (
 		<>
 			<div className="px-5">
@@ -9,8 +23,6 @@ const page = () => {
 					<MainHeader />
 
 					<main className="lg:w-[52%]">
-						{/* <AboutSection /> */}
-
 						<AllSections />
 					</main>
 				</div>
