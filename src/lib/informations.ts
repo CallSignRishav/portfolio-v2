@@ -1,7 +1,7 @@
 export const experiences = [
 	{
 		company: "Avira Digital Studios, Kolkata, India",
-		position: "Web Developer (Project - Based)",
+		position: "Web Developer",
 		startDate: "Feb, 2025 - Present",
 		description:
 			"I have been working as a full-stack developer with this company. I have resposibilities for building modern web applications. I have to write and managing both frontend and backend code at the same time.",
@@ -44,5 +44,52 @@ export const experiences = [
 		description:
 			"I was the billing operator for the company. Alos have to maintain the stocks and inventory of the company.",
 		technologies: ["Excel", "Word"],
+	},
+];
+
+export const projects = [
+	{
+		name: "Avira Digital Studios",
+		description:
+			"A web application for Avira Digital Studios. This is basically a company branding website.",
+		url: "https://aviradigitalstudios.com/",
+		image: "/projects/avira-web.png",
+		technologies: [
+			"Nextjs",
+			"TypeScript",
+			"Tailwind CSS",
+			"Prisma",
+			"Sqlite",
+		],
+	},
+	{
+		name: "Luster Capital",
+		description:
+			"This is a blog website with a custom dashboard feature. In here admin can add blog posts.",
+		url: "https://lustercapital.in/",
+		image: "/projects/lustercapital.png",
+		technologies: [
+			"Nextjs",
+			"TypeScript",
+			"Tailwind CSS",
+			"Prisma",
+			"PostgreSql",
+			"Shadcn",
+			"Swiper",
+		],
+	},
+	{
+		name: "CIT India",
+		description:
+			"All informations of CIT India have been archived here. Nextjs's Server Side Rendering (SSR) is used to render the pages.",
+		url: "https://citindia.in/",
+		image: "/projects/cit-web.png",
+		technologies: [
+			"Nextjs",
+			"TypeScript",
+			"Tailwind CSS",
+			"Prisma",
+			"Sqlite",
+		],
 	},
 ];

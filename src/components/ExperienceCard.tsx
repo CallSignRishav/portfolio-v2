@@ -17,7 +17,7 @@ const ExperienceCard = ({
 	technologies,
 }: PropsType) => {
 	return (
-		<Card className="border-none border-white/10 bg-slate-900/50 shadow-none shadow-gray-950/40 hover:bg-slate-800/50 hover:shadow-lg">
+		<Card className="rounded-none border-none border-white/10 bg-slate-900/50 shadow-none shadow-gray-950/40 hover:bg-slate-800/50 hover:shadow-lg">
 			<CardContent className="space-y-3">
 				<div className="space-y-1">
 					<div className="flex flex-col items-start justify-center gap-1">

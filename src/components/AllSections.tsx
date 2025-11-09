@@ -1,11 +1,11 @@
 "use client";
 
 import { activeIdAtom } from "@/lib/atoms";
-import { experiences } from "@/lib/informations";
+import { experiences, projects } from "@/lib/informations";
 import { useSetAtom } from "jotai";
 import { useEffect } from "react";
 import ExperienceCard from "./ExperienceCard";
-import { Card, CardContent } from "./ui/card";
+import ProjectCard from "./ProjectCard";
 
 const AllSections = () => {
 	const setActiveId = useSetAtom(activeIdAtom);
@@ -190,28 +190,18 @@ const AllSections = () => {
 					</h2>
 				</div>
 
-				<Card>
-					<CardContent>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing
-							elit. Sed facilis, quis recusandae fugiat quasi
-							debitis asperiores qui eum deserunt, ratione eveniet
-							et rem ipsum molestiae, inventore ullam soluta a
-							eligendi pariatur amet reiciendis consequuntur porro
-							doloribus! Ipsum alias at maiores in minus iure?
-							Illo unde obcaecati autem vero ducimus. Nobis
-							necessitatibus rerum repellat iusto dolor officia
-							nemo molestiae dicta commodi? Eos deleniti
-							necessitatibus ratione unde cumque corporis possimus
-							beatae quaerat incidunt numquam, autem expedita nisi
-							minus nam reprehenderit ab ad! Repellendus quas
-							voluptatibus, qui enim temporibus fugiat harum
-							deleniti consequatur molestias cumque nam tempore
-							reiciendis similique, doloribus aliquid explicabo
-							quasi?
-						</p>
-					</CardContent>
-				</Card>
+				{projects.map((project, index) => {
+					return (
+						<ProjectCard
+							key={index}
+							name={project.name}
+							description={project.description}
+							url={project.url}
+							image={project.image}
+							technologies={project.technologies}
+						/>
+					);
+				})}
 			</section>
 
 			<section
