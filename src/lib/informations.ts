@@ -93,3 +93,52 @@ export const projects = [
 		],
 	},
 ];
+
+export const techSkills = [
+	{
+		title: "JavaScript",
+		items: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
+	},
+	{
+		title: "Frontend",
+		items: [
+			"Nodejs",
+			"React",
+			"Nextjs",
+			"Tailwind CSS",
+			"Shadcn UI",
+			"Swiper",
+			"Motion",
+		],
+	},
+	{
+		title: "Backend",
+		items: ["Nodejs", "Fastify", "Directus"],
+	},
+	{
+		title: "Database",
+		items: ["PostgreSql", "Sqlite", "Prisma ORM"],
+	},
+	{
+		title: "Tools & Platforms",
+		items: [
+			"Git",
+			"Github",
+			"Postman",
+			"Hoppscotch",
+			"VS Code",
+			"Rest API",
+		],
+	},
+	{
+		title: "Concepts",
+		items: [
+			"Multi-tenant architecture",
+			"Microservices",
+			"Monolith",
+			"Role-based authentication",
+			"Responsive design",
+			"Server‑side rendering",
+		],
+	},
+];

@@ -1,11 +1,12 @@
 "use client";
 
 import { activeIdAtom } from "@/lib/atoms";
-import { experiences, projects } from "@/lib/informations";
+import { experiences, projects, techSkills } from "@/lib/informations";
 import { useSetAtom } from "jotai";
 import { useEffect } from "react";
 import ExperienceCard from "./ExperienceCard";
 import ProjectCard from "./ProjectCard";
+import SkillCard from "./SkillCard";
 
 const AllSections = () => {
 	const setActiveId = useSetAtom(activeIdAtom);
@@ -33,7 +34,7 @@ const AllSections = () => {
 			},
 			{
 				root: null,
-				rootMargin: "0% 0% -75% 0%", // Adjust this for earlier/later trigger
+				rootMargin: "0% 0% -50% 0%", // Adjust this for earlier/later trigger
 				threshold: 0.15, // Trigger when 50% of section is visible
 			},
 		);
@@ -50,10 +51,10 @@ const AllSections = () => {
 	}, [setActiveId]);
 
 	return (
-		<div className="font-inter space-y-20 py-24 text-white/80">
+		<div className="font-inter space-y-28 py-24 text-white/80">
 			<section
 				id="about"
-				className="min-h-[80dvh] space-y-5 text-justify">
+				className="space-y-5 text-justify">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
 					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
 						ABOUT
@@ -145,7 +146,7 @@ const AllSections = () => {
 			</section>
 
 			<section
-				className="min-h-[80dvh] space-y-10 text-justify"
+				className="space-y-10 text-justify"
 				id="experience">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
 					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
@@ -176,7 +177,7 @@ const AllSections = () => {
 			</section>
 
 			<section
-				className="min-h-[80dvh] space-y-5 text-justify"
+				className="space-y-5 text-justify"
 				id="projects">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
 					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
@@ -205,7 +206,7 @@ const AllSections = () => {
 			</section>
 
 			<section
-				className="min-h-[80dvh] space-y-5 text-justify"
+				className="space-y-5 text-justify"
 				id="skills">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
 					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
@@ -219,35 +220,15 @@ const AllSections = () => {
 					</h2>
 				</div>
 
-				<p className="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam, aut enim velit at aliquid atque veniam optio, animi
-					soluta numquam ex ad nobis, natus dolores voluptatum
-					quibusdam fugit est? A, fuga consectetur tempore dignissimos
-					asperiores voluptates natus quibusdam odit dicta. Fugiat
-					natus nisi aspernatur repellendus expedita tenetur porro
-					eius, cupiditate ratione laudantium autem. Cum, accusantium!
-				</p>
-
-				<p className="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam, aut enim velit at aliquid atque veniam optio, animi
-					soluta numquam ex ad nobis, natus dolores voluptatum
-					quibusdam fugit est? A, fuga consectetur tempore dignissimos
-					asperiores voluptates natus quibusdam odit dicta. Fugiat
-					natus nisi aspernatur repellendus expedita tenetur porro
-					eius, cupiditate ratione laudantium autem. Cum, accusantium!
-				</p>
-
-				<p className="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam, aut enim velit at aliquid atque veniam optio, animi
-					soluta numquam ex ad nobis, natus dolores voluptatum
-					quibusdam fugit est? A, fuga consectetur tempore dignissimos
-					asperiores voluptates natus quibusdam odit dicta. Fugiat
-					natus nisi aspernatur repellendus expedita tenetur porro
-					eius, cupiditate ratione laudantium autem. Cum, accusantium!
-				</p>
+				{techSkills.map((skill, index) => {
+					return (
+						<SkillCard
+							key={index}
+							title={skill.title}
+							items={skill.items}
+						/>
+					);
+				})}
 			</section>
 
 			<section
