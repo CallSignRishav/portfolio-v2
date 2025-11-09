@@ -23,7 +23,7 @@ const ExperienceCard = ({
 					<div className="flex flex-col items-start justify-center gap-1">
 						<p className="text-xs text-white/50">{startDate}</p>
 
-						<h2 className="text-xl font-bold text-white">
+						<h2 className="text-xl font-bold text-slate-200">
 							{position}
 						</h2>
 					</div>

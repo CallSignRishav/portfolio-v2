@@ -55,18 +55,18 @@ const AllSections = () => {
 				id="about"
 				className="min-h-[80dvh] space-y-5 text-justify">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-					<h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">
+					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
 						ABOUT
 					</h2>
 				</div>
 
 				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
-					<h2 className="text-sm font-bold tracking-widest text-white uppercase">
+					<h2 className="text-lg font-bold tracking-[.4rem] text-slate-200 uppercase">
 						ABOUT
 					</h2>
 				</div>
 
-				<p className="text-white/50">
+				<p className="px-5 text-white/50">
 					Hi, I&apos;m{" "}
 					<span className="text-white">Rishav Mondal</span>, a
 					full-stack web developer who found my way into coding
@@ -74,7 +74,7 @@ const AllSections = () => {
 					<span className="text-white">unconventional path</span>.
 				</p>
 
-				<p className="text-white/50">
+				<p className="px-5 text-white/50">
 					I <span className="text-white">graduated</span> with a
 					degree in Arts and started my career working with Excel and
 					Word in administrative roles. But something was missing.{" "}
@@ -88,7 +88,7 @@ const AllSections = () => {
 					came after. It was intense, but I loved every minute of it.
 				</p>
 
-				<p className="text-white/50">
+				<p className="px-5 text-white/50">
 					That self-learning journey led to my first{" "}
 					<span className="text-white">teaching role,</span> where I
 					got to share HTML and CSS basics with new students. During
@@ -103,7 +103,7 @@ const AllSections = () => {
 					</span>
 				</p>
 
-				<p className="text-white/50">
+				<p className="px-5 text-white/50">
 					For the past few months, I&apos;ve been working as a
 					full-stack developer with a company on{" "}
 					<span className="text-white">client projects</span>,
@@ -128,7 +128,7 @@ const AllSections = () => {
 					work.
 				</p>
 
-				<p className="text-white/50">
+				<p className="px-5 text-white/50">
 					I&apos;m comfortable with the full development cycle — from{" "}
 					<span className="text-white">
 						designing database schemas
@@ -148,13 +148,13 @@ const AllSections = () => {
 				className="min-h-[80dvh] space-y-10 text-justify"
 				id="experience">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-					<h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">
+					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
 						EXPERIENCES
 					</h2>
 				</div>
 
 				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
-					<h2 className="text-sm font-bold tracking-widest text-white uppercase">
+					<h2 className="text-lg font-bold tracking-[.4rem] text-slate-200 uppercase">
 						Experiences
 					</h2>
 				</div>
@@ -179,13 +179,13 @@ const AllSections = () => {
 				className="min-h-[80dvh] space-y-5 text-justify"
 				id="projects">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-					<h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">
+					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
 						PROJECTS
 					</h2>
 				</div>
 
 				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
-					<h2 className="text-sm font-bold tracking-widest text-white uppercase">
+					<h2 className="text-lg font-bold tracking-[.4rem] text-white/50 uppercase">
 						Projects
 					</h2>
 				</div>
@@ -208,13 +208,13 @@ const AllSections = () => {
 				className="min-h-[80dvh] space-y-5 text-justify"
 				id="skills">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-					<h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">
+					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
 						SKILLS
 					</h2>
 				</div>
 
 				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
-					<h2 className="text-sm font-bold tracking-widest text-white uppercase">
+					<h2 className="text-lg font-bold tracking-[.4rem] text-white uppercase">
 						Skills
 					</h2>
 				</div>
@@ -254,13 +254,13 @@ const AllSections = () => {
 				className="min-h-[80dvh] space-y-5 text-justify"
 				id="contact">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-					<h2 className="text-sm font-bold tracking-widest text-slate-200 uppercase lg:sr-only">
+					<h2 className="text-sm font-bold tracking-[.4rem] text-slate-200 uppercase lg:sr-only">
 						CONTACT
 					</h2>
 				</div>
 
 				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
-					<h2 className="text-sm font-bold tracking-widest text-white uppercase">
+					<h2 className="text-lg font-bold tracking-[.4rem] text-white uppercase">
 						Contact
 					</h2>
 				</div>

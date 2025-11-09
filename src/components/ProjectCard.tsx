@@ -27,7 +27,7 @@ const ProjectCard = ({
 						href={url}
 						target="_blank"
 						className="grid grid-cols-5 place-items-start">
-						<div className="col-span-2 flex items-center justify-center">
+						<div className="col-span-5 flex items-center justify-center lg:col-span-2">
 							<Image
 								src={image}
 								alt={`${name} image`}
@@ -37,13 +37,11 @@ const ProjectCard = ({
 							/>
 						</div>
 
-						<div className="col-span-3 space-y-1.5 pl-5">
-							<div className="flex items-center gap-3">
-								<h2 className="text-xl font-bold text-white">
-									{name}
-								</h2>
+						<div className="col-span-5 space-y-1.5 pt-5 lg:col-span-3 lg:pt-0 lg:pl-5">
+							<div className="flex items-center gap-3 text-slate-200">
+								<h2 className="text-xl font-bold">{name}</h2>
 
-								<ExternalLink className="size-5 text-white" />
+								<ExternalLink className="size-5" />
 							</div>
 
 							<p className="text-base text-white/50">
