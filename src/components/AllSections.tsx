@@ -4,9 +4,11 @@ import { activeIdAtom } from "@/lib/atoms";
 import { experiences, projects, techSkills } from "@/lib/informations";
 import { useSetAtom } from "jotai";
 import { useEffect } from "react";
+import ContactForm from "./ContactForm";
 import ExperienceCard from "./ExperienceCard";
 import ProjectCard from "./ProjectCard";
 import SkillCard from "./SkillCard";
+import { Card, CardContent } from "./ui/card";
 
 const AllSections = () => {
 	const setActiveId = useSetAtom(activeIdAtom);
@@ -246,45 +248,11 @@ const AllSections = () => {
 					</h2>
 				</div>
 
-				<p className="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam, aut enim velit at aliquid atque veniam optio, animi
-					soluta numquam ex ad nobis, natus dolores voluptatum
-					quibusdam fugit est? A, fuga consectetur tempore dignissimos
-					asperiores voluptates natus quibusdam odit dicta. Fugiat
-					natus nisi aspernatur repellendus expedita tenetur porro
-					eius, cupiditate ratione laudantium autem. Cum, accusantium!
-				</p>
-
-				<p className="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam, aut enim velit at aliquid atque veniam optio, animi
-					soluta numquam ex ad nobis, natus dolores voluptatum
-					quibusdam fugit est? A, fuga consectetur tempore dignissimos
-					asperiores voluptates natus quibusdam odit dicta. Fugiat
-					natus nisi aspernatur repellendus expedita tenetur porro
-					eius, cupiditate ratione laudantium autem. Cum, accusantium!
-				</p>
-
-				<p className="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam, aut enim velit at aliquid atque veniam optio, animi
-					soluta numquam ex ad nobis, natus dolores voluptatum
-					quibusdam fugit est? A, fuga consectetur tempore dignissimos
-					asperiores voluptates natus quibusdam odit dicta. Fugiat
-					natus nisi aspernatur repellendus expedita tenetur porro
-					eius, cupiditate ratione laudantium autem. Cum, accusantium!
-				</p>
-
-				<p className="">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam, aut enim velit at aliquid atque veniam optio, animi
-					soluta numquam ex ad nobis, natus dolores voluptatum
-					quibusdam fugit est? A, fuga consectetur tempore dignissimos
-					asperiores voluptates natus quibusdam odit dicta. Fugiat
-					natus nisi aspernatur repellendus expedita tenetur porro
-					eius, cupiditate ratione laudantium autem. Cum, accusantium!
-				</p>
+				<Card className="rounded-none border-none border-white/10 bg-slate-900/50 shadow-none shadow-gray-950/40 hover:bg-slate-800/50 hover:shadow-lg">
+					<CardContent>
+						<ContactForm />
+					</CardContent>
+				</Card>
 			</section>
 		</div>
 	);

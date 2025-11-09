@@ -1,4 +1,6 @@
 import { ComponentProps, ReactNode } from "react";
+import z from "zod";
+import { contactFormSchema } from "./schemas";
 
 export type MotionCustomProps = Omit<
 	ComponentProps<"div">,
@@ -23,3 +25,5 @@ export type MotionCustomProps = Omit<
 	duration?: number;
 	className?: string;
 };
+
+export type ContactFormDataType = z.infer<typeof contactFormSchema>;
