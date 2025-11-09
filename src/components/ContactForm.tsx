@@ -1,9 +1,11 @@
 "use client";
 
+import { sendEmail } from "@/Hooks/email";
 import { contactFormSchema } from "@/lib/schemas";
 import { ContactFormDataType } from "@/lib/types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { Button } from "./ui/button";
 import {
 	Form,
@@ -27,8 +29,18 @@ const ContactForm = () => {
 		mode: "all",
 	});
 
-	const contactFormSubmit = (data: ContactFormDataType) => {
-		console.log(data);
+	const contactFormSubmit = async (fData: ContactFormDataType) => {
+		const { success, message } = await sendEmail(fData);
+
+		if (!success) {
+			toast.error(message);
+		}
+
+		if (success) {
+			rhForm.reset();
+
+			toast.success(message);
+		}
 	};
 
 	return (
