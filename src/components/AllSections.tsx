@@ -185,7 +185,7 @@ const AllSections = () => {
 				</div>
 
 				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
-					<h2 className="text-lg font-bold tracking-[.4rem] text-white/50 uppercase">
+					<h2 className="text-lg font-bold tracking-[.4rem] text-slate-200 uppercase">
 						Projects
 					</h2>
 				</div>
@@ -214,7 +214,7 @@ const AllSections = () => {
 				</div>
 
 				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
-					<h2 className="text-lg font-bold tracking-[.4rem] text-white uppercase">
+					<h2 className="text-lg font-bold tracking-[.4rem] text-slate-200 uppercase">
 						Skills
 					</h2>
 				</div>
@@ -260,7 +260,7 @@ const AllSections = () => {
 				</div>
 
 				<div className="hidden bg-slate-900/75 px-6 py-5 backdrop-blur lg:block">
-					<h2 className="text-lg font-bold tracking-[.4rem] text-white uppercase">
+					<h2 className="text-lg font-bold tracking-[.4rem] text-slate-200 uppercase">
 						Contact
 					</h2>
 				</div>
