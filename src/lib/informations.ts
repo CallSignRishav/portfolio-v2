@@ -96,7 +96,7 @@ export const projects = [
 
 export const techSkills = [
 	{
-		title: "JavaScript",
+		title: "Languages",
 		items: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
 	},
 	{
