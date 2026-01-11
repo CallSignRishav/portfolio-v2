@@ -1,8 +1,26 @@
 export const experiences = [
 	{
 		company: "Avira Digital Studios, Kolkata, India",
-		position: "Web Developer",
-		startDate: "Feb, 2025 - Present",
+		position: "React Web Developer",
+		startDate: "Dec, 2025 - Present",
+		description:
+			"After working project base for Avira Digital Studios, I have been working as a full time React Web Developer with this company. I have resposibilities for building modern web applications.",
+		technologies: [
+			"React",
+			"Nextjs",
+			"Tailwind CSS",
+			"Node.js",
+			"JavaScript",
+			"TypeScript",
+			"Prisma",
+			"Fastify",
+			"PostgreSql",
+		],
+	},
+	{
+		company: "Avira Digital Studios, Kolkata, India",
+		position: "Web Developer (Project Base)	",
+		startDate: "Feb, 2025 - Nov, 2025",
 		description:
 			"I have been working as a full-stack developer with this company. I have resposibilities for building modern web applications. I have to write and managing both frontend and backend code at the same time.",
 		technologies: [
