@@ -1,12 +1,11 @@
 "use client";
 
 import { activeIdAtom } from "@/lib/atoms";
-import { experiences, projects, techSkills } from "@/lib/informations";
+import { experiences, techSkills } from "@/lib/informations";
 import { useSetAtom } from "jotai";
 import { useEffect } from "react";
 import ContactForm from "./ContactForm";
 import ExperienceCard from "./ExperienceCard";
-import ProjectCard from "./ProjectCard";
 import SkillCard from "./SkillCard";
 import { Card, CardContent } from "./ui/card";
 
@@ -178,7 +177,7 @@ const AllSections = () => {
 				</div>
 			</section>
 
-			<section
+			{/* <section
 				className="space-y-5 text-justify"
 				id="projects">
 				<div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -205,7 +204,7 @@ const AllSections = () => {
 						/>
 					);
 				})}
-			</section>
+			</section> */}
 
 			<section
 				className="space-y-5 text-justify"

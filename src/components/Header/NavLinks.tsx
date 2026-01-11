@@ -25,13 +25,13 @@ const NavLinks = () => {
 					</a>
 				</li>
 
-				<li>
+				{/* <li>
 					<a
 						href="#projects"
 						className={`${activeId === "projects" ? "scale-105 shadow-md" : ""} bg-slate-900/50 px-6 py-3 shadow-white/10 backdrop-blur-sm transition-all duration-500 ease-in-out`}>
 						PROJECTS
 					</a>
-				</li>
+				</li> */}
 
 				<li>
 					<a
