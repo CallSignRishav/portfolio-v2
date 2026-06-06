@@ -12,7 +12,7 @@ const RootLayout = ({
 	return (
 		<html
 			lang="en"
-			className={`${inter.variable} scroll-smooth`}
+			className={`${inter.variable} scrollbar-thin scrollbar-thumb-slate-400/45 scrollbar-track-slate-950 scroll-smooth`}
 			data-scroll-behavior="smooth">
 			<body className="min-h-screen bg-linear-to-tr from-slate-950 via-gray-900 to-blue-950 bg-fixed">
 				<Provider>
