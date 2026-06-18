@@ -16,6 +16,7 @@ import {
 	FormMessage,
 } from "./ui/form";
 import { Input } from "./ui/input";
+import { Spinner } from "./ui/spinner";
 import { Textarea } from "./ui/textarea";
 
 const ContactForm = () => {
@@ -116,8 +117,13 @@ const ContactForm = () => {
 						<Button
 							type="submit"
 							size={"lg"}
-							className="cursor-pointer rounded-none bg-slate-900/75 text-slate-200 shadow-white/10 transition-all ease-in-out hover:bg-slate-900/50 hover:shadow-md active:scale-95">
-							Submit
+							disabled={rhForm.formState.isSubmitting}
+							className="w-28 cursor-pointer rounded-none bg-slate-900/75 text-slate-200 shadow-white/10 transition-all ease-in-out hover:bg-slate-900/50 hover:shadow-md active:scale-95">
+							{rhForm.formState.isSubmitting ? (
+								<Spinner />
+							) : (
+								"Submit"
+							)}
 						</Button>
 					</div>
 				</form>
