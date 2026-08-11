@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 	metadataBase: new URL(`https://${env.DOMAIN_NAME}`),
 	title: "Rishav Mondal | Portfolio",
 	description:
-		"A full-stack web developer who found his way into coding through a slightly unconventional path.",
+		"A full-stack web developer, who found his way into coding through a slightly unconventional path.",
 	keywords:
 		"portfolio, rishav mondal, rishav mondal portfolio, developer portfolio website, portfolio website",
 	openGraph: {
