@@ -17,6 +17,7 @@
 | ---------------- | ---------------------------------------- |
 | `bun run dev`    | Clean `.next` then start dev server      |
 | `bun run build`  | Production build                         |
+| `bun run start`  | Start production server                  |
 | `bun run lint`   | ESLint only (no typecheck step)          |
 | `bun run prod`   | Clean, build, then start production      |
 | `bun run format` | Not configured — use `prettier` directly |
@@ -39,9 +40,10 @@ src/
 - **`dev` clears `.next` on every start** via `rimraf .next && next dev`. Expect a full re-build on each run.
 - **No typecheck script** — `lint` only runs ESLint. To typecheck, run `npx tsc --noEmit`.
 - **Email server action** lives in `src/Hooks/email.ts` (not `src/app/api/`). It uses `"use server"` directly and is imported normally from the client component (`import { sendEmail } from "@/Hooks/email"`).
-- **Env vars** are read at runtime from `process.env` in `src/lib/env.ts`. Required vars: `SERVER_URL`, `NEXT_PUBLIC_URL`, `user` (Gmail), `pass` (Gmail app password), `DOMAIN_NAME`.
+- **Env vars** are read at runtime from `process.env` in `src/lib/env.ts`. Required vars: `SERVER_URL`, `NEXT_PUBLIC_URL`, `user` (Gmail), `pass` (Gmail app password), `DOMAIN_NAME`. There is **no `.env.example`** (`.env` is gitignored), so `env.ts` is the source of truth for var names; add any new var there.
+- **Active-section tracking**: `AllSections.tsx` uses an `IntersectionObserver` to write the current section id to `activeIdAtom` (`src/lib/atoms.ts`); `Header/NavLinks.tsx` reads it to highlight the active nav link.
 - **Site content** (experiences, projects, tech skills) lives in `src/lib/informations.ts`, not in the components. Edit content there.
-- **Projects section is commented out** in `AllSections.tsx` (lines 180-207); the `projects` data still exists in `src/lib/informations.ts` and is ready to re-enable.
+- **Projects section is commented out** in `AllSections.tsx` (lines 180-207); the `projects` data still exists in `src/lib/informations.ts` and is ready to re-enable. `ProjectCard.tsx` exists but is currently unused.
 - **Deployed on Netlify** (see README badge).
 - **No testing setup** — no test runner configured.
 
