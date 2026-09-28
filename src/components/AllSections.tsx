@@ -71,7 +71,7 @@ const AllSections = () => {
 				<p className="px-5 text-white/50">
 					Hi, I&apos;m{" "}
 					<span className="text-white">Rishav Mondal</span>, a
-					full-stack web developer who found my way into coding
+					full-stack web developer who found his way into coding
 					through a slightly{" "}
 					<span className="text-white">unconventional path</span>.
 				</p>
@@ -88,6 +88,19 @@ const AllSections = () => {
 					</span>{" "}
 					from scratch. HTML, CSS, JavaScript, and everything that
 					came after. It was intense, but I loved every minute of it.
+					In Aug 2026, I{" "}
+					<span className="text-white">
+						enrolled in an online BCA
+					</span>{" "}
+					at{" "}
+					<span className="text-white">
+						Uttaranchal University, expected 2029,
+					</span>{" "}
+					to add{" "}
+					<span className="text-white">
+						formal computer science depth
+					</span>{" "}
+					to my real production experience.
 				</p>
 
 				<p className="px-5 text-white/50">
@@ -106,8 +119,8 @@ const AllSections = () => {
 				</p>
 
 				<p className="px-5 text-white/50">
-					For the past few months, I&apos;ve been working as a
-					full-stack developer with a company on{" "}
+					Since Dec 2025, I&apos;ve been working as a full-stack
+					developer with Avira Digital Studios on{" "}
 					<span className="text-white">client projects</span>,
 					building modern web applications with{" "}
 					<span className="text-white">
